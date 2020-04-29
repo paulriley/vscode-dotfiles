@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Installing dotfiles ..."
+echo "Installing .zshrc"
+cp .zshrc ~/.zshrc
