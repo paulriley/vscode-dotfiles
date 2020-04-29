@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "Installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh || true
 echo "Customizing oh-my-zsh"
 cp .zshrc ~/.zshrc
