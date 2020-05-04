@@ -5,5 +5,3 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 
 echo "Customizing oh-my-zsh"
 cp .zshrc ~/.zshrc
-
-chsh -s $(which zsh)
