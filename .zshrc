@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH_THEME="wezm"
+export ZSH_THEME="vscode-container"
 
 plugins=(gitfast sudo docker docker-compose dotnet safe-paste)
 
