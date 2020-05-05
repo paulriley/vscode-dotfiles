@@ -6,3 +6,4 @@ plugins=(gitfast sudo docker docker-compose dotnet safe-paste)
 source $ZSH/oh-my-zsh.sh
  ###
  ###
+ ###
