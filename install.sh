@@ -5,12 +5,13 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 
 echo "Installing my own themes"
 git clone https://github.com/paulriley/zsh-themes.git /tmp/zsh-themes/
-cp /tmp/zsh-themes/*.zsh-theme ~/.oh-my-zsh/themes
-rm -rf zsh-themes
+&& cp /tmp/zsh-themes/*.zsh-theme ~/.oh-my-zsh/themes
+&& rm -rf zsh-themes
 
 echo "Customizing oh-my-zsh"
 cp .zshrc ~/.zshrc
 
-echo "Copying some handy scripts over"
-cp -r quick-scripts ~
-export PATH=$PATH:~/quick-scripts
+echo "Installing manuals"
+rm /etc/dpkg/dpkg.cfg.d/excludes \
+&& apt-get update \
+&& dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall
