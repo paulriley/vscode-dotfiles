@@ -10,8 +10,3 @@ git clone https://github.com/paulriley/zsh-themes.git /tmp/zsh-themes/ \
 
 echo "Customizing oh-my-zsh"
 cp .zshrc ~/.zshrc
-
-echo "Installing manuals"
-rm /etc/dpkg/dpkg.cfg.d/excludes \
-&& apt-get update \
-&& dpkg -l | grep ^ii | cut -d' ' -f3 | xargs apt-get install -y --reinstall
