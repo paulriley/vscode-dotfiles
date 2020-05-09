@@ -5,7 +5,7 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 
 echo "Installing my own themes"
 git clone https://github.com/paulriley/zsh-themes.git /tmp/zsh-themes/ \
-&& cp /tmp/zsh-themes/*.zsh-theme ~/.oh-my-zsh/themes \
+&& cp /tmp/zsh-themes/*.zsh-theme ~/.oh-my-zsh/custom/themes \
 && rm -rf zsh-themes
 
 echo "Customizing oh-my-zsh"
