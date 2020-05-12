@@ -1,10 +1,17 @@
 #!/bin/bash
 
-echo "Installing jq and zsh"
+echo "Updating repos"
 sudo apt-get update
+
+echo "Installing useful tools"
 sudo apt-get install -y --no-install-recommends \
     jq \
+    locales \
     zsh
+
+echo "Setting locale"
+sudo locale-gen "en_GB.UTF-8" \
+&& sudo dpkg-reconfigure --frontend noninteractive locales
 
 echo "Installing and customizing oh-my-zsh"
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh || true
