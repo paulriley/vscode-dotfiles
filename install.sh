@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Installing jq and zsh"
-apt-get update
-apt-get install \
+sudo apt-get update
+sudo apt-get install \
     jq \
     zsh
 
