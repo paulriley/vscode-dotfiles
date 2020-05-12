@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "Installing jq and zsh"
+apt-get update
+apt-get install \
+    jq \
+    zsh
+
 echo "Installing and customizing oh-my-zsh"
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh || true
 
