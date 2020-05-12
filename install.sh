@@ -10,7 +10,9 @@ sudo apt-get install -y --no-install-recommends \
     zsh
 
 echo "Setting locale"
+
 sudo locale-gen "en_GB.UTF-8" \
+&& export LC_ALL="en_GB.UTF-8" \
 && sudo dpkg-reconfigure --frontend noninteractive locales
 
 echo "Installing and customizing oh-my-zsh"
