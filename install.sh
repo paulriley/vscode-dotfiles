@@ -16,7 +16,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 echo "Installing my own themes"
 git clone https://github.com/paulriley/zsh-themes.git /tmp/zsh-themes/ \
-&& cp /tmp/zsh-themes/*.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/custom/themes \
+&& cp /tmp/zsh-themes/*.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes \
 && rm -rf zsh-themes
 
 echo "Customizing oh-my-zsh"
